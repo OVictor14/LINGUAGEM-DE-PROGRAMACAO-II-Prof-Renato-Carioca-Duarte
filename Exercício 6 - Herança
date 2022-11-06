@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AtivHerança._30092022
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
+
+==========================================================================================================================================================================
+==========================================================================================================================================================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AtivHerança._30092022
+{
+    class Pessoa
+    {
+        private String Nome { get; set; }
+        private String Endereço { get; set; }
+        private String CPF { get; set; }
+        private String RG { get; set; }
+
+        public Pessoa(string Nome, string Endereço, string CPF, string RG)
+        {
+            
+        }
+
+        public String ImprimePessoa()
+        {
+            return Nome + " " + Endereço + " " + CPF + " " + RG;
+        }
+
+
+    }
+}
+
+==========================================================================================================================================================================
+==========================================================================================================================================================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AtivHerança._30092022
+{
+    class Aluno
+    {
+        private String Matricula{ get; set; }
+        private int N1 { get; set; }
+        private int N2 { get; set; }
+        private int Falta { get; set; }
+
+        public String Faltas()
+        {
+            if(this.Falta >= 10)
+            {
+                return "Reprovado!";
+            }
+            
+        }
+
+        public String Media()
+        {
+           if((this.N1+this.N2)/2 >= 7)
+            {
+                return "Aprovado";
+            }
+        }
+    }
+}
