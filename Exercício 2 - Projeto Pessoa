@@ -1,0 +1,114 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProjetoPessoa9._9._22
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Pessoa p1 = new Pessoa("David", 23, 'H');
+            Pessoa p2 = new Pessoa();
+            Pessoa p3 = new Pessoa();
+
+            //p1.Nome = "David";
+            //p2.Nome = "Paula";
+            //p3.Nome = "Tadeu";
+
+            //p1.setNome("David");
+            p2.setNome("Paula");
+            p3.setNome("Tadeu");
+
+            //p1.Idade = 23;
+            //p2.Idade = 33;
+            //p3.Idade = 16;
+
+            //p1.setIdade(23);
+            p2.setIdade(33);
+            p3.setIdade(16);
+
+            //p1.Sexo = 'H';
+            //p2.Sexo = 'M';
+            //p3.Sexo = 'H';
+
+            //p1.setSexo('H');
+            p2.setSexo('M');
+            p3.setSexo('H');
+
+            //Console.WriteLine(p1.Nome + " " + p1.Idade + " é " + p1.Sexo);
+            //Console.WriteLine(p2.Nome + " " + p2.Idade + " é " + p2.Sexo);
+            //Console.WriteLine(p3.Nome + " " + p3.Idade + " é " + p3.Sexo);
+
+            Console.WriteLine(p1.getNome() + " " + p1.getIdade() + " é " + p1.getSexo());
+            Console.WriteLine(p2.getNome() + " " + p2.getIdade() + " é " + p2.getSexo());
+            Console.WriteLine(p3.getNome() + " " + p3.getIdade() + " é " + p3.getSexo());
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+=======================================================================================================================================================================
+=======================================================================================================================================================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProjetoPessoa9._9._22
+{
+    class Pessoa
+    {
+        private String Nome;
+        private int Idade;
+        private char Sexo;
+
+        //Construtor
+        public Pessoa(string nome, int idade, char sexo)
+        {
+            Nome = nome;
+            Idade = idade;
+            Sexo = sexo;
+        }
+
+        public Pessoa()
+        {
+        }
+
+        //Buscar a var. Nome
+        public void setNome(string Nome)
+        {
+            this.Nome = Nome;
+        }
+        public String getNome()
+        {
+            return (this.Nome);
+        }
+
+        //Buscar a var. Idade
+        public void setIdade(int Idade)
+        {
+            this.Idade = Idade;
+        }
+        public int getIdade()
+        {
+            return (this.Idade);
+        }
+
+        //Buscar a var. Sexo
+        public void setSexo(char Sexo)
+        {
+            this.Sexo = Sexo;
+        }
+        public char getSexo()
+        {
+            return (this.Sexo);
+        }
+    }
+}
