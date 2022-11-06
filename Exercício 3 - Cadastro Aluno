@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex160922
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Alunos a1 = new Alunos("Zé", 12, "Zé@aluno.com");
+            Alunos a2 = new Alunos("Ana", 234, "ana@xy.com");
+            Alunos a3 = new Alunos("Paulo", 738, "pauo@ig.com");
+
+            Console.WriteLine(a1.getNome() + " " + a1.getIdade() + " " + a1.getEmail());
+            Console.WriteLine(a2.getNome() + " " + a2.getIdade() + " " + a2.getEmail());
+            Console.WriteLine(a3.getNome() + " " + a3.getIdade() + " " + a3.getEmail());
+
+            Console.ReadKey();
+        }
+    }
+}
+
+==========================================================================================================================================================================
+==========================================================================================================================================================================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex160922
+{
+    class Alunos
+    {
+        private string nome;
+        private int idade;
+        private string email;
+
+
+        public Alunos(string nome, int idade, string email)
+        {
+            this.nome = nome;
+            this.idade = idade;
+            this.email = email;
+        }
+
+        public string getNome()
+        {
+            return this.nome;
+        }
+
+        //public void setNome(string nome)
+        //{
+          //  this.nome = nome;
+       // }
+
+        public int getIdade()
+        {
+            return this.idade;
+        }
+
+        public string getEmail()
+        {
+            return this.email;
+        }
+    }
+}
